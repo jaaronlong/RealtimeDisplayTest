@@ -449,23 +449,23 @@ function scrollInstagram() {
 $(function(){
 
   //check open times every minute
-  updatePlaces();
-  setInterval(updatePlaces, 60000);
+ // updatePlaces();
+ // setInterval(updatePlaces, 60000);
 
   //update Twitterevery 5 minutes
   updateTwitter();
   setInterval(updateTwitter, 300000);
 
   //update Foursquare every 5 minutes
-  updateFoursquare();
-  setInterval(updateFoursquare, 300000);
+ // updateFoursquare();
+ // setInterval(updateFoursquare, 300000);
 
   //update Instagram every 30 minutes 
-  updateInstagram();
-  setInterval(updateInstagram, 1800000);
+ // updateInstagram();
+ // setInterval(updateInstagram, 1800000);
 
   //scroll every 5 seconds
-  setInterval(function(){ scrollInstagram(); scrollFoursquare(); scrollTwitter() }, 5000);
+  setInterval(function(){ /*scrollInstagram(); scrollFoursquare();*/ scrollTwitter() }, 5000);
 
   //reload browser every 6 hours
   setInterval(function(){ window.location.reload(true); }, 21600000);
