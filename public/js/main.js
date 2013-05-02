@@ -251,7 +251,7 @@ function updateTwitter(){
         var embedlyOptions = {
             key: 'a264d15f7a9d4241bf7a216c6305c1fc'
           , url: tweet.entities.urls[0].expanded_url
-          , maxwidth: 600
+          , maxwidth: 200
         }
         $.getJSON('http://api.embed.ly/1/oembed?callback=?', embedlyOptions, function(data){
           if(data.thumbnail_url){
